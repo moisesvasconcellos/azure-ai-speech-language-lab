@@ -1,0 +1,108 @@
+# 🧠 Azure AI - Speech Studio e Language Studio
+
+## 📌 Objetivo
+Aplicar na prática os serviços de IA da Azure para análise de fala e linguagem natural, explorando cenários reais de uso corporativo.
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- Azure Speech Studio
+- Azure Language Studio
+- NLP (Processamento de Linguagem Natural)
+- Speech-to-Text
+
+---
+
+## 🔊 Speech Studio
+
+### ✔ Conversão de fala em texto
+
+**Processo:**
+- Upload de áudio
+- Processamento automático
+- Geração de transcrição
+
+**Resultado:**
+- Alta precisão em inglês
+- Sensível a ruído e sotaque
+
+📷 Evidência:
+![Speech](./images/speech-test.png)
+
+---
+
+## 🧾 Language Studio
+
+### ✔ Análise de sentimento
+
+**Exemplo de entrada:**
+> "The service was slow, but the support team was excellent."
+
+**Resultado:**
+- Sentimento: Misto
+
+📷 Evidência:
+![Language](./images/language-test.png)
+
+---
+
+## 🧠 Insights técnicos
+
+- A qualidade da entrada impacta diretamente o resultado
+- Speech AI depende de áudio limpo
+- NLP pode falhar com ironia ou ambiguidade
+- Modelos não são determinísticos
+
+---
+
+## 💡 Aplicações reais
+
+- Call centers → transcrição automática
+- Chatbots → interpretação de intenção
+- Monitoramento de redes sociais
+- Acessibilidade (voz → texto)
+
+---
+
+## 🔗 Exemplo de integração
+
+```python
+import requests
+
+url = "https://<endpoint>"
+headers = {"Ocp-Apim-Subscription-Key": "<key>"}
+
+response = requests.post(url, headers=headers)
+print(response.json())
+
+
+
+---
+
+# 📌 PASSO 4 — Subir prints (obrigatório pra nota alta)
+
+Você já fez os testes → agora prove:
+
+### Tire prints de:
+- Speech Studio funcionando
+- Language Studio resultado
+- Tela de análise
+
+Coloque em:
+
+
+---
+
+# 📌 PASSO 5 — Diferencial (faz você sair da média)
+
+Adicione no README (no final):
+
+## 🔥 Limitações reais
+
+```markdown
+## ⚠️ Limitações observadas
+
+- Falha com áudio de baixa qualidade
+- Dificuldade com sotaques regionais
+- NLP não interpreta sarcasmo com precisão
